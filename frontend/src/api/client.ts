@@ -11,8 +11,14 @@ export function getApiLocale(): Locale {
   return currentLocale;
 }
 
+const apiBaseUrl =
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.PROD
+    ? 'https://ytech-portfolio.infinityfreeapp.com/api/v1'
+    : 'http://localhost:8000/api/v1');
+
 const apiClient = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1',
+  baseURL: apiBaseUrl,
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
