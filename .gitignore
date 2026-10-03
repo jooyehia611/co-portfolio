@@ -48,3 +48,5 @@ yarn-error.log*
 # Deploy artifacts
 deploy/**/*.zip
 deploy/**/staging/
+deploy/**/.env.production
+
