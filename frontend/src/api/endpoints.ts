@@ -1,0 +1,17 @@
+export const endpoints = {
+  home: '/home',
+  settings: '/settings',
+  about: '/about',
+  services: '/services',
+  service: (slug: string) => `/services/${slug}`,
+  projects: '/projects',
+  project: (slug: string) => `/projects/${slug}`,
+  technologies: '/technologies',
+  testimonials: '/testimonials',
+  team: '/team',
+  contactFormData: '/contact/form-data',
+  contact: '/contact',
+  privacy: '/pages/privacy',
+  terms: '/pages/terms',
+  seo: (key: string) => `/seo/${key}`,
+} as const;

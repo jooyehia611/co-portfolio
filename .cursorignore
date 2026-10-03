@@ -1,0 +1,43 @@
+# =========================
+# Laravel Backend
+# =========================
+backend/vendor/
+backend/storage/logs/
+backend/storage/framework/cache/
+backend/storage/framework/sessions/
+backend/storage/framework/views/
+backend/bootstrap/cache/
+backend/public/storage/
+
+# =========================
+# React Frontend
+# =========================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/coverage/
+
+# =========================
+# Common / Generated
+# =========================
+*.log
+*.zip
+*.tar
+*.gz
+*.sql
+*.dump
+
+.env
+.env.*
+!.env.example
+
+.idea/
+.vscode/
+
+.DS_Store
+Thumbs.db
+
+tmp/
+temp/
+cache/

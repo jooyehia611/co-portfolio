@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+@import '@heroui/styles';
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'swiper/css/navigation';
+
+@import './theme.css';
+@import './layout.css';
+@import './home.css';
+@import './voice-reviews.css';
+@import './pages.css';
