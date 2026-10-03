@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Public disk without symlink (InfinityFree does not allow storage:link)
+RewriteRule ^storage/(.*)$ /storage/app/public/$1 [END]
+
+# Route all traffic through Laravel public/
+RewriteRule (.*) /public/$1 [L]
